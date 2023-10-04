@@ -1,0 +1,3723 @@
+
+
+
+<!DOCTYPE html>
+<html oncontextmenu="return false;" lang="en" dir="ltr" wf-loading>
+    <head>
+        
+    <script>
+function speak12(){
+    var synthd = window.speechSynthesis;
+   var speakren = 'Welcome To Cosmic Colonization Download Page.';
+    var utterThis = new SpeechSynthesisUtterance(speakren);
+    synthd.speak(utterThis);
+
+}
+speak12()
+    </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="WhatsApp Image 2023-10-04 at 16.02.43_06f5b702.jpg">
+
+
+    <script>
+        window.newrelicAttributes = {
+            accountId: "1796917",
+            trustKey: "1796917",
+            agentId: "149134891",
+            licenseKey: "f701a6c63c",
+            applicationId: "149134891"
+        };
+    </script>
+    <script src="/newrelic.js"></script>
+
+
+
+<!-- Compliant Google Optimize -->
+<script>
+        (() => {
+            const getPrivacyCookie = () => {
+                const privacyCookie = document.cookie.match('(^|;)\\s*cmapi_cookie_privacy\\s*=\\s*([^;]+)');
+
+                return privacyCookie ? privacyCookie.pop() : null;
+            };
+
+            const getBehaviorCookie = () => {
+                const behaviorCookie = document.cookie.match('(^|;)\\s*notice_behavior\\s*=\\s*([^;]+)');
+
+                return behaviorCookie ? behaviorCookie.pop() : null;
+            };
+
+            const hasOptedIn = () => {
+                const behaviorCookie = getBehaviorCookie();
+                const privacyCookie = getPrivacyCookie();
+
+                return behaviorCookie && behaviorCookie.match(/^none$/) || privacyCookie && privacyCookie.match(/2|3/);
+            }
+
+            const appendOptimize = () => {
+                const head = document.getElementsByTagName('head')[0];
+
+                if (head) {
+                    const script = document.createElement('script');
+
+                    script.src = 'https://www.googleoptimize.com/optimize.js?id=GTM-M6BQF2W';
+                    script.id = "google-optimize"
+                    head.append(script);
+                }
+            };
+
+            const removeOptimize = () => {
+                const head = document.getElementsByTagName('head')[0];
+                const optimizeScript = document.getElementById('google-optimize');
+
+                if (head && optimizeScript) {
+                    head.removeChild(optimizeScript);
+                }
+            }
+
+            /**
+             * Append or remove Google Optimize script to head,
+             * depending on whether user's cookie preferences
+             * have opted in and Google Optimize script already
+             * exists in head.
+             */
+            const handleConsentDecision = () => {
+                const googleOptimizeScript = document.getElementById('google-optimize');
+                if (hasOptedIn() && !googleOptimizeScript) {
+                    appendOptimize();
+                } else if (!hasOptedIn() && googleOptimizeScript) {
+                    removeOptimize();
+                }
+            }
+
+            /**
+             * Callbacks will occur in the form of a PostMessage event. This code listens for the
+             * appropriately formatted PostMessage event, gets the new consent decision, and then sets
+             * the new cookie preferences.
+             */
+            const handlePreferencesUpdated = (e) => {
+                try {
+                    const { capabilities, action } = JSON.parse(e.data).PrivacyManagerAPI || {};
+                    if (capabilities && action === 'getConsentDecision') {
+                        handleConsentDecision();
+                    }
+                } catch (error) {
+                    console.error(error);
+                }
+            }
+
+            /**
+             * Registers with the TrustArc Content Manager (CM) API to receive callbacks when
+             * a preference update occurs, and initialized dispatched preferences array to
+             * the user's current preferences. You must wait for the CM API (PrivacyManagerAPI object)
+             * to exist on the page before registering.
+             */
+            const CMICallbackRegister = () => {
+                const interval = setInterval(() => {
+                    if (window.PrivacyManagerAPI && interval) {
+                        const apiObject = {
+                            PrivacyManagerAPI: {
+                                action: 'getConsentDecision',
+                                timestamp: new Date().getTime(),
+                                self: window.location.host
+                            }
+                        };
+                        window.top.postMessage(JSON.stringify(apiObject), '*');
+                        clearInterval(interval);
+                    }
+                }, 50);
+            }
+
+            /**
+             * Listener registers a message callback on the TrustArc Content Manager when
+             * user's cookie preferences are updated and adds an event listener
+             * on the message events that occur when said preference updates occur.
+             */
+            const trustArcScriptLoadListener = () => {
+                if (typeof window.truste === 'object') {
+                    CMICallbackRegister();
+                    window.addEventListener('message', handlePreferencesUpdated);
+                }
+            }
+
+            window.addEventListener('load', trustArcScriptLoadListener);
+            const behaviorCookie = getBehaviorCookie();
+
+            if (behaviorCookie === null) {
+                // wait for TrustArc script to load before checking cookies
+                let numIntervals = 0;
+                const scriptLoadInterval = setInterval( () => {
+                    if(getBehaviorCookie()) {
+                        handleConsentDecision();
+                        clearInterval(scriptLoadInterval);
+                    }
+                    // Stop running interval after 8 times (8x the documented 500ms it
+                    // should take to load the TrustArc script on the BE) to prevent running forever
+                    if (++numIntervals >= 10) {
+                        clearInterval(scriptLoadInterval);
+                    }
+                } , 500);
+            } else {
+                handleConsentDecision();
+            }
+        })();
+</script>
+    <!-- End Compliant Google Optimize -->
+
+
+<!-- Google Tag Manager -->
+<script>
+    (function(w, d, s, l) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+
+        var f = d.getElementsByTagName(s)[0];
+        var j = d.createElement(s);
+        var dl = l !== 'dataLayer' ? '&l=' + l : '';
+
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-TG32RCX' + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer');
+</script>
+<!-- End Google Tag Manager -->
+
+
+
+<style>
+    [unresolved] {
+        visibility: hidden !important;
+    }
+</style>
+
+
+<noscript>
+    <style>
+        [unresolved] {
+            visibility: visible !important;
+        }
+    </style>
+</noscript>
+
+<style>
+    body {
+        margin: 0;
+    }
+
+    .image img {
+        max-width: 100%;
+    }
+</style>
+
+
+<script>
+    
+    if (!CSS.supports('width', 'calc((var(--test))')) {
+        window.ShadyCSS = {
+            shimcssproperties: true
+        };
+    }
+
+    document.addEventListener('nds.typeKit.active', function() {
+        document.querySelector('html').removeAttribute('wf-loading');
+    });
+</script>
+
+<script src="//unpkg.com/@webcomponents/webcomponentsjs@2.2.7/webcomponents-loader.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="//w.soundcloud.com/player/api.js"></script>
+
+
+
+
+
+
+<script>
+    window.nds = window.nds || {};
+    window.nds.componentUrlPrefix = '//pl.ea.com/release/4.63.0/elements/ea-elements.min.js'.substring(0, '//pl.ea.com/release/4.63.0/elements/ea-elements.min.js'.lastIndexOf('/') + 1);
+    window.nds.contentfulUrl = 'https://contentful-proxy.juno.ea.com/graphql';
+    window.nds.salUrl = 'https://service-aggregation-layer.juno.ea.com/graphql';
+    window.nds.useApq = true;
+    window.nds.salClientId = 'eacom-fe';
+    window.nds.xGameDistMethod = 'eacom';
+    window.nds.lockboxGameId = 'eacom';
+    window.nds.lockboxInvoiceSource = 'EACOM-STORE-WEB-%countryCode%';
+    window.nds.lockboxExternalPaymentPath = '/lockbox-external-payment';
+</script>
+
+
+
+<script type="module" src="//pl.ea.com/release/4.63.0/elements/ea-elements.min.js"></script>
+<script nomodule defer src="//pl.ea.com/release/4.63.0/elements/ea-elements.min.js"></script>
+
+
+
+    
+        
+            
+                <style>@font-face {font-family: VanguardCFBold; src: url(/assets/fonts/mass-effect/VanguardCF-Bold.woff) format('woff');}  @font-face {font-family: EASSans; src: url(/assets/fonts/mass-effect/EASSans-Light.woff) format('woff');}</style>
+            
+        
+    
+
+<style>
+    @font-face {
+    font-family: 'ElectronicArtsDisplay';
+    src: url(/assets/fonts/display/ElectronicArtsDisplay-Regular.woff2) format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ElectronicArtsDisplay';
+    src: url(/assets/fonts/display/ElectronicArtsDisplay-Bold.woff2) format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ElectronicArtsText';
+    src: url(/assets/fonts/text/ElectronicArtsText-Light.woff2) format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ElectronicArtsText';
+    src: url(/assets/fonts/text/ElectronicArtsText-LightItalic.woff2) format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'ElectronicArtsText';
+    src: url(/assets/fonts/text/ElectronicArtsText-Regular.woff2) format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ElectronicArtsText';
+    src: url(/assets/fonts/text/ElectronicArtsText-Italic.woff2) format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'ElectronicArtsText';
+    src: url(/assets/fonts/text/ElectronicArtsText-Bold.woff2) format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ElectronicArtsText';
+    src: url(/assets/fonts/text/ElectronicArtsText-BoldItalic.woff2) format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+</style>
+
+
+
+
+
+
+    <title>COSMIC COLLONIIZERS</title>
+    
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mass Effect™ Legendary Edition - EA Official Site">
+<meta property="og:description" content="Relive the legend of Commander Shepard in the highly acclaimed Mass Effect trilogy with the Mass Effect Legendary Edition.">
+
+    <meta property="og:url" content="https://www.ea.com/games/mass-effect/mass-effect-legendary-edition">
+
+<meta property="og:site_name" content="Electronic Arts Inc.">
+
+    <meta property="og:image" content="https://media.contentapi.ea.com/content/dam/masseffect/images/2020/10/me-featured-image-mele-keyart-logo.jpg.adapt.crop191x100.1200w.jpg">
+
+
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="628">
+
+
+<meta name="description" content="Relive the legend of Commander Shepard in the highly acclaimed Mass Effect trilogy with the Mass Effect Legendary Edition.">
+<meta name="author" content="Electronic Arts">
+<meta property="article:modified_time" content="2021-11-18T07:33:29Z">
+<meta property="article:published_time" content="2021-11-18T07:33:29Z">
+
+
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ea">
+<meta name="twitter:title" content="Mass Effect™ Legendary Edition - EA Official Site">
+<meta name="twitter:description" content="Relive the legend of Commander Shepard in the highly acclaimed Mass Effect trilogy with the Mass Effect Legendary Edition.">
+
+    <meta name="twitter:image" content="https://media.contentapi.ea.com/content/dam/masseffect/images/2020/10/me-featured-image-mele-keyart-logo.jpg.adapt.crop16x9.1023w.jpg">
+
+<meta name="twitter:creator" content="@ea">
+
+</head>
+    <body unresolved>
+        
+    
+
+
+
+
+
+    
+        
+            <custom-style>
+                <style>
+                    html {
+                        
+                            --origin-brand-color: #07F468;
+                        
+                            --eaCorporate-landingSection-spacerTop-XS: 32px;
+                        
+                            --eaCorporate-landingSection-spacerTop-SM: 32px;
+                        
+                            --eaCorporate-landingSection-spacerTop-MD: 80px;
+                        
+                            --eaCorporate-landingSection-spacerTop-LG: 104px;
+                        
+                            --eaCorporate-landingSection-spacerTop-XL: 128px;
+                        
+                            --eaCorporate-landingSection-spacerBottom-XS: 32px;
+                        
+                            --eaCorporate-landingSection-spacerBottom-SM: 32px;
+                        
+                            --eaCorporate-landingSection-spacerBottom-MD: 40px;
+                        
+                            --eaCorporate-landingSection-spacerBottom-LG: 48px;
+                        
+                            --eaCorporate-landingSection-spacerBottom-XL: 56px;
+                        
+                            --eaCorporate-standardSection-spacerTop-XS: 48px;
+                        
+                            --eaCorporate-standardSection-spacerTop-SM: 48px;
+                        
+                            --eaCorporate-standardSection-spacerTop-MD: 80px;
+                        
+                            --eaCorporate-standardSection-spacerTop-LG: 80px;
+                        
+                            --eaCorporate-standardSection-spacerTop-XL: 80px;
+                        
+                            --eaCorporate-standardSection-spacerBottom-XS: 48px;
+                        
+                            --eaCorporate-standardSection-spacerBottom-SM: 48px;
+                        
+                            --eaCorporate-standardSection-spacerBottom-MD: 80px;
+                        
+                            --eaCorporate-standardSection-spacerBottom-LG: 80px;
+                        
+                            --eaCorporate-standardSection-spacerBottom-XL: 80px;
+                        
+                            --ea-theme-stream-ui-paddle-default: #161616;
+                        
+                            --ea-theme-stream-ui-paddle-disabled: #BFBFBF;
+                        
+                            --ea-theme-stream-ui-progress-indicator-default: rgb(255,255,255);
+                        
+                            --ea-theme-stream-ui-progress-indicator-hover: rgb(255,255,255);
+                        
+                            --ea-theme-stream-ui-progress-bar-stroke-default: #ff8e8e;
+                        
+                            --ea-theme-stream-ui-progress-bar-stroke-hover: #ff8e8e;
+                        
+                            --ea-theme-stream-ui-progress-bar-fill-hover: #ff8e8e;
+                        
+                            --ea-theme-toaster-eyebrow-font-size-mobile: 16px;
+                        
+                            --ea-theme-toaster-eyebrow-font-size-tablet: 18px;
+                        
+                            --ea-theme-toaster-eyebrow-font-size-desktop: 20px;
+                        
+                            --ea-theme-toaster-copy-font-size-tablet: 16px;
+                        
+                            --ea-theme-toaster-copy-font-size-desktop: 18px;
+                        
+                            --ea-theme-tabs-background-color: rgba(255, 255, 255, 1);
+                        
+                            --ea-theme-tabs-indicator-color: rgba(255, 255, 255, 0);
+                        
+                            --ea-theme-tabs-interface-color: #000000;
+                        
+                            --ea-theme-tabs-unselected-type: #000000;
+                        
+                            --ea-theme-tabs-selected-type: rgba(255, 255, 255, 1);
+                        
+                            --ea-theme-tabs-selected-state: #C80000;
+                        
+                             --ea-theme-tabs-accent-elements: rgba(0, 0, 0, 0.08);
+                        
+                            --ea-theme-tabs-inactive-interface-color: rgba(0, 0, 0, 0.5);
+                        
+                            --ea-theme-tabs-tab-text-transform: capitalize;
+                        
+                            --ea-theme-h5-font-size-tablet-landscape: 22px;
+                        
+                            --ea-theme-color: #C80000;
+                        
+                            --ea-theme-primary-font-family: eassans, sans-serif;
+                        
+                            --ea-theme-secondary-font-family: VanguardCFBold, sans-serif;
+                        
+                            --ea-theme-dark-gradient: #020050;
+                        
+                            --ea-theme-light-gradient: #C80000;
+                        
+                            --ea-theme-body-font-size-desktop: 20px;
+                        
+                            --ea-theme-d4-font-size-desktop: 42px;
+                        
+                            --ea-theme-typographic-headings-font-family: VanguardCFBold, sans-serif;
+                        
+                            --ea-theme-countdown-clock-digit-font-family: eassans;
+                        
+                            --ea-theme-countdown-clock-digit-font-size: 96px;
+                        
+                            --ea-theme-countdown-clock-digit-text-anchor: middle;
+                        
+                            --ea-theme-countdown-clock-units-font-family: biomass;
+                        
+                            --ea-theme-countdown-clock-units-font-size: 18px;
+                        
+                            --ea-theme-countdown-clock-units-text-anchor: middle;
+                        
+                            --ea-theme-countdown-clock-units-text-transform: uppercase;
+                        
+                            --ea-theme-d4-font-size-tablet-landscape: 40px;
+                        
+                            --ea-theme-d4-font-size-tablet-portrait: 34px;
+                        
+                            --ea-theme-d4-font-size-mobile: 34px;
+                        
+                            --ea-theme-d3-font-size-desktop: 54px;
+                        
+                            --ea-theme-d3-font-size-tablet-landscape: 48px;
+                        
+                            --ea-theme-d3-font-size-tablet-portrait: 42px;
+                        
+                            --ea-theme-d3-font-size-mobile: 40px;
+                        
+                    }
+                </style>
+            </custom-style>
+        
+    
+
+
+
+<ea-elements-loader elements="ea-network-nav, ea-player, ea-type-kit">
+</ea-elements-loader>
+
+
+    <ea-network-nav
+        unresolved
+        userData="/user-data"
+        content="//nds-network-nav.ea.com//en-us/network-nav"
+        login-url="/login"
+        logout-url="/logout"
+            
+                
+                    
+                        hide-logo
+                    
+                
+                    
+                        
+                            visible="scrollup"
+                        
+                    
+                
+            
+    ></ea-network-nav>
+
+
+
+
+
+
+
+    
+        
+            
+                
+<ea-elements-loader elements="ea-local-nav-advanced, ea-link">
+</ea-elements-loader>
+<ea-local-nav-advanced
+    
+    
+        home-text = "Home"
+        home-tooltip = "Home"
+
+    
+    
+        logo-image="WhatsApp Image 2023-10-04 at 16.02.43_06f5b702.jpg"
+        
+            logo-tooltip=""
+        
+    
+    
+        theme = "light"
+    
+    
+        shelf-type = "band"
+    
+    
+        open-drawer-text = "Menu"
+    
+    
+        close-drawer-text = "Close"
+    
+    
+    
+
+    
+        show-franchise-nav
+    
+
+    
+        show-breadcrumbs
+    
+
+    
+        game-link-text = "COSMIC COLLONIIZERS LEGENDARY"
+    
+
+    
+
+    
+
+    
+        franchise-link-text = "COSMIC COLLONIZERS"
+    
+
+    
+    unresolved
+>
+    
+        
+            
+<ea-elements-loader elements="ea-game-box">
+</ea-elements-loader>
+<ea-container
+    
+        filter-key="All"
+    
+    
+        slot="franchise-game-box"
+    
+>
+    <ea-game-box
+        slot="game-box"
+        
+        
+        background-image="Mars1.jpg"
+            
+                background-image-alt-text=""
+            
+
+        
+        
+            logo-url="WhatsApp Image 2023-10-04 at 16.02.43_06f5b702.jpg"
+            logo-alt=""
+        
+                
+        
+          
+        
+        
+        
+            type="simple"
+        
+        
+        show-back-alt="COSMIC COLLONIIZERS"
+        show-front-alt="COSMIC COLLONIIZERS"
+        title="COSMIC COLLONIIZERS LEGENDARY"
+
+        unresolved
+    >
+        
+        
+        
+
+        
+        <!-- Output Main Link as an anchor tag for SEO -->
+      
+    </ea-game-box>
+</ea-container>
+
+        
+            
+<ea-elements-loader elements="ea-game-box">
+</ea-elements-loader>
+<ea-container
+    
+        filter-key="All"
+    
+    
+        slot="franchise-game-box"
+    
+>
+    <ea-game-box
+        slot="game-box"
+        
+            background-image="Mars2.jpg"
+            
+                background-image-alt-text=""
+            
+
+        
+        
+            logo-url="WhatsApp Image 2023-10-04 at 16.02.43_06f5b702.jpg"
+            logo-alt=""
+        
+
+        
+        
+            type="simple"
+        
+
+
+        unresolved
+    >
+        
+    
+    </ea-game-box>
+</ea-container>
+
+        
+    
+
+    
+
+    
+        <a title="Home" href="index.html">
+            Home
+            
+                <img
+                    src="WhatsApp Image 2023-10-04 at 16.02.43_06f5b702.jpg"
+                    
+                />
+            
+        </a>
+    
+
+    
+        
+            
+<ea-elements-loader elements="ea-local-nav-shelf-sub-nav">
+</ea-elements-loader>
+<ea-link
+slot="local-nav-shelf-link"
+class="eapl-local-nav__shelf-link"
+text-color="dark"
+link-href="index.html"
+link-title="HOME"
+link-text="HOME"
+unresolved
+>
+<a href="index.html">HOME</a>
+</ea-link>
+
+
+
+
+
+
+
+
+
+
+<ea-link
+slot="local-nav-shelf-link"
+class="eapl-local-nav__shelf-link"
+text-color="dark"
+link-href="gameoverview.html"
+link-title="GAME OVERVIEW"
+link-text="GAME OVERVIEW"
+unresolved
+>
+<a href="gameoverview.html">GAME OVERVIEW</a>
+</ea-link>
+
+<ea-link
+slot="local-nav-shelf-link"
+class="eapl-local-nav__shelf-link"
+text-color="dark"
+link-href="story.html"
+link-title="STORY"
+link-text="STORY"
+unresolved
+>
+<a href="story.html">STORY</a>
+</ea-link>
+        
+    </ea-local-nav-drawer-sub-nav-advanced>
+
+
+        
+            
+
+    <ea-elements-loader elements="ea-local-nav-drawer-sub-nav-advanced">
+    </ea-elements-loader>
+    <ea-local-nav-drawer-sub-nav-advanced
+        
+            slot="local-nav-drawer-link"
+        
+        toggle-text="COMMUNITY HUB"
+        toggle-tooltip=""
+        theme="light"
+        
+            type="simple"
+        
+        unresolved
+    >
+        
+        
+            
+
+    <ea-elements-loader elements="ea-link">
+    </ea-elements-loader>
+    
+
+        
+            
+
+    <ea-elements-loader elements="ea-link">
+    </ea-elements-loader>
+    <ea-link
+        slot="local-nav-drawer-sub-link"
+        class="eapl-local-nav__drawer-sub-link"
+        link-href="/games/mass-effect/mass-effect-legendary-edition/community#fan-submissions"
+        link-title=""
+        link-text="FAN SUBMISSIONS"
+        text-color=""
+        unresolved
+    >
+        <a href="/games/mass-effect/mass-effect-legendary-edition/community#fan-submissions">FAN SUBMISSIONS</a>
+    </ea-link>
+
+
+        
+    </ea-local-nav-drawer-sub-nav-advanced>
+
+
+        
+            
+
+    <ea-elements-loader elements="ea-link">
+    </ea-elements-loader>
+    <ea-link
+        
+            slot="local-nav-drawer-link"
+        
+        class="eapl-local-nav__drawer-link"
+        link-href="/games/mass-effect/mass-effect-legendary-edition/media"
+        link-title="MEDIA"
+        link-text="MEDIA"
+        text-color="dark"
+        unresolved
+    >
+        <a href="/games/mass-effect/mass-effect-legendary-edition/media">MEDIA</a>
+    </ea-link>
+
+
+        
+            
+
+    <ea-elements-loader elements="ea-link">
+    </ea-elements-loader>
+ 
+
+
+        
+            
+
+    <ea-elements-loader elements="ea-link">
+    </ea-elements-loader>
+    <ea-link
+        
+            slot="local-nav-drawer-link"
+        
+        class="eapl-local-nav__drawer-link"
+        link-href="/games/mass-effect/mass-effect-legendary-edition/my-shepard-art-creator"
+        link-title="IMAGE LIBRARY"
+        link-text="IMAGE LIBRARY"
+        text-color="dark"
+        unresolved
+    >
+        <a href="/games/mass-effect/mass-effect-legendary-edition/my-shepard-art-creator">IMAGE LIBRARY</a>
+    </ea-link>
+
+
+        
+            
+
+    <ea-elements-loader elements="ea-local-nav-drawer-sub-nav-advanced">
+    </ea-elements-loader>
+    <ea-local-nav-drawer-sub-nav-advanced
+        
+            slot="local-nav-drawer-link"
+        
+        toggle-text="MASS EFFECT"
+        toggle-tooltip=""
+        theme="light"
+        
+        unresolved
+    >
+        
+            
+<ea-elements-loader elements="ea-game-box">
+</ea-elements-loader>
+<ea-container
+    
+        filter-key="All"
+    
+    
+        slot="local-nav-drawer-sub-gamebox"
+    
+>
+    <ea-game-box
+        slot="game-box"
+        
+            background-image="Mars1.jpg"
+            
+                background-image-alt-text=""
+            
+
+        
+        
+            logo-url="https://media.contentapi.ea.com/content/dam/masseffect/common/mass-effect-legendary-edition-hero-large-light-logo.svg"
+            logo-alt=""
+
+        
+            main-link-title="COSMIC COLLONIIZERS LENGEND EDITION"
+        
+        
+        
+            type="simple"
+
+        unresolved
+    >
+        
+        
+        
+
+        
+     
+    </ea-game-box>
+</ea-container>
+
+        
+            
+<ea-elements-loader elements="ea-game-box">
+</ea-elements-loader>
+<ea-container
+    
+        filter-key="All"
+    
+    
+        slot="local-nav-drawer-sub-gamebox"
+    
+>
+    <ea-game-box
+        slot="game-box"
+        
+            background-image="https://media.contentapi.ea.com/content/dam/masseffect/images/2020/08/mea-hero-large-keyart-homepage-16x9-xl.jpg.adapt.crop1x1.767w.jpg"
+            
+                background-image-alt-text=""
+            
+
+        
+        
+            logo-url="https://media.contentapi.ea.com/content/dam/masseffect/common/mass-effect-andromeda-hero-medium-light-logo.svg"
+            logo-alt=""
+        
+        
+            main-link-url="/games/mass-effect/mass-effect-andromeda"
+        
+
+        
+        
+        
+            type="simple"
+        
+        
+
+        sale-text=""
+        unresolved
+    >
+        
+        
+        
+
+        
+        <!-- Output Main Link as an anchor tag for SEO -->
+
+    </ea-game-box>
+</ea-container>
+
+        
+        
+    </ea-local-nav-drawer-sub-nav-advanced>
+
+
+        
+    
+
+    
+        
+
+
+    <ea-elements-loader elements="ea-cta-dropdown, ea-hybrid-modal-invoker">
+    </ea-elements-loader>
+
+    
+        <ea-cta-dropdown
+            slot="cta-dropdown"
+            theme="light"
+            cta-title-text="Download Now"
+            cta-link="/games/mass-effect/mass-effect-legendary-edition/buy"
+            border-color="none"
+            fill-color="brand"
+            text-color="light"
+
+            
+            
+            
+            
+            unresolved
+        >
+            
+                <ea-container>
+                
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+
+
+                </ea-container>
+            
+                <ea-container>
+                
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="cta"
+    
+    
+        type="standard"
+    
+    
+        link-url="https://smarturl.it/mele-playstation"
+    
+    
+    
+        link-text="Download Now"
+    
+    
+        icon="platform-ps"
+    
+    
+    
+        fill-color="playstation-brand"
+    
+    
+        text-color="light"
+    
+    
+        stroke-color="none"
+    
+    
+        target="_blank"
+    
+    
+    
+    
+        intent="retailer"
+    
+    
+    
+    
+        emphasis="primary"
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+           href="https://smarturl.it/mele-playstation"
+        
+        
+    >
+        
+            Download Now.
+        
+    </a>
+</ea-cta>
+
+                </ea-container>
+            
+                <ea-container>
+                
+
+            
+        </ea-cta-dropdown>
+    
+
+
+
+        
+            <ea-elements-loader elements="ea-local-nav-dropdown">
+            </ea-elements-loader>
+            <ea-local-nav-dropdown
+                slot="local-nav-dropdown"
+                theme="light"
+                menu-title=""
+                cta-title-text="Download now"
+                cta-link="/games/mass-effect/mass-effect-legendary-edition/buy"
+                border-color="none"
+                fill-color="brand"
+                text-color="light"
+                
+                unresolved
+            >
+            
+                <ea-container>
+                    
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+
+                </ea-container>
+            
+                <ea-container>
+                    
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="cta"
+    
+    
+        type="standard"
+    
+    
+        link-url="https://smarturl.it/mele-playstation"
+    
+    
+    
+        link-text="Download now"
+    
+    
+        icon="platform-ps"
+    
+    
+    
+        fill-color="playstation-brand"
+    
+    
+        text-color="light"
+    
+    
+        stroke-color="none"
+    
+    
+        target="_blank"
+    
+    
+    
+    
+        intent="retailer"
+    
+    
+    
+    
+        emphasis="primary"
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+            href="https://smarturl.it/mele-playstation"
+        
+        
+    >
+        
+            PlayStation
+        
+    </a>
+</ea-cta>
+
+                </ea-container>
+            
+              
+            </ea-local-nav-dropdown>
+        
+    
+</ea-local-nav-advanced>
+
+            
+        
+    
+
+
+
+
+    
+        
+            
+                
+<ea-elements-loader elements="ea-spacer">
+</ea-elements-loader>
+<ea-spacer
+    unresolved
+    
+        smallest="6rem"
+    
+    
+        small="6rem"
+    
+    
+        medium="6rem"
+    
+    
+        large="6rem"
+    
+    
+        largest="6rem"
+    
+>
+</ea-spacer>
+
+            
+        
+    
+
+
+<main>
+    
+
+
+<ea-elements-loader elements="ea-page-background">
+</ea-elements-loader>
+<ea-page-background
+    unresolved
+    layout="fixed"
+    background-color=""
+    
+>
+    
+
+
+    <ea-elements-loader elements="ea-image">
+    </ea-elements-loader>
+    <ea-image
+        unresolved
+        tooltip=""
+        smallest="https://media.contentapi.ea.com/content/dam/bf/common/redesign-2018/bf-page-bg-franchise-black-xl.jpg.adapt.crop16x9.320w.jpg"
+        small="https://media.contentapi.ea.com/content/dam/bf/common/redesign-2018/bf-page-bg-franchise-black-xl.jpg.adapt.crop16x9.767w.jpg"
+        medium="https://media.contentapi.ea.com/content/dam/bf/common/redesign-2018/bf-page-bg-franchise-black-xl.jpg.adapt.crop16x9.1023w.jpg"
+        large="https://media.contentapi.ea.com/content/dam/bf/common/redesign-2018/bf-page-bg-franchise-black-xl.jpg.adapt.crop16x9.1455w.jpg"
+        largest="https://media.contentapi.ea.com/content/dam/bf/common/redesign-2018/bf-page-bg-franchise-black-xl.jpg.adapt.crop16x9.1920w.jpg"
+        
+        
+        
+        
+            slot="image"
+        
+        
+    >
+        <img
+            src="https://media.contentapi.ea.com/content/dam/bf/common/redesign-2018/bf-page-bg-franchise-black-xl.jpg.adapt.crop16x9.320w.jpg"
+            alt=""
+            srcset="https://media.contentapi.ea.com/content/dam/bf/common/redesign-2018/bf-page-bg-franchise-black-xl.jpg.adapt.crop16x9.320w.jpg 320w, https://media.contentapi.ea.com/content/dam/bf/common/redesign-2018/bf-page-bg-franchise-black-xl.jpg.adapt.crop16x9.767w.jpg 768w, https://media.contentapi.ea.com/content/dam/bf/common/redesign-2018/bf-page-bg-franchise-black-xl.jpg.adapt.crop16x9.1023w.jpg 1024w, https://media.contentapi.ea.com/content/dam/bf/common/redesign-2018/bf-page-bg-franchise-black-xl.jpg.adapt.crop16x9.1455w.jpg 1320w, https://media.contentapi.ea.com/content/dam/bf/common/redesign-2018/bf-page-bg-franchise-black-xl.jpg.adapt.crop16x9.1920w.jpg 1456w" />
+    </ea-image>
+
+
+
+</ea-page-background>
+
+
+    
+
+
+    
+
+
+
+
+<ea-elements-loader elements="ea-section">
+</ea-elements-loader>
+<ea-section
+    unresolved
+    slot="section"
+    
+    
+        type="full-bleed"
+    
+    
+        layout="100"
+    
+    
+    
+        background-color="none"
+    
+    
+    
+        background-overflow="hidden"
+    
+    
+        spacing-top="none"
+    
+    
+        spacing-bottom="none"
+    
+    
+    
+    
+    
+>
+    
+    
+
+
+<ea-section-column
+    slot="section-column"
+    
+        indent-left=""
+    
+    
+        indent-right=""
+    
+    
+        text-align="left"
+    
+    
+    
+        mobile-order="0"
+    
+    
+>
+    
+<ea-elements-loader elements="ea-hero">
+</ea-elements-loader>
+<ea-hero
+    
+        layout="large"
+    
+    
+        text-position="left"
+    
+    
+        text-align="center"
+    
+    
+        text-color="light"
+    
+    
+        stacked
+    
+    
+    
+    
+    
+    
+        background-color="none"
+    
+    
+    
+    
+    
+        subtitle-text="KnoW More About The Mars Ans Its Survival."
+    
+    
+    
+        image-smallest="iol.png"
+        image-small="iol.png"
+        image-medium="iol.png"
+        image-large="iol.png"
+        image-largest="iol.png"
+        image-tooltip=""
+    
+    
+    
+    
+    
+    
+        logo-image="iyut.png"
+        logo-alt=""
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        spacing-bottom="none"
+    
+    
+        spacing-top="none"
+    
+    
+        scrim-color="none"
+    
+    
+        scrim-opacity="medium"
+    
+    
+    unresolved
+    
+        custom-styles="{&quot;xl&quot;:{&quot;paddingLeft&quot;:&quot;5%&quot;,&quot;paddingRight&quot;:&quot;60%&quot;},&quot;l&quot;:{&quot;paddingLeft&quot;:&quot;5%&quot;,&quot;paddingRight&quot;:&quot;60%&quot;},&quot;m&quot;:{&quot;paddingLeft&quot;:&quot;5%&quot;,&quot;paddingRight&quot;:&quot;60%&quot;}}"
+    
+    
+    
+    
+>
+   
+    
+        <h2 style="margin: 20px;">KnoW More About The Mars Ans Its Survival.</h2>
+    
+    
+    
+    
+        <img
+            src="Mars1.jpg"
+            alt=""
+            srcset="https://media.contentapi.ea.com/content/dam/masseffect/images/2020/10/mele-hero-large-keyart-16x9-xl.jpg.adapt.crop1x1.320w.jpg 320w, https://media.contentapi.ea.com/content/dam/masseffect/images/2020/10/mele-hero-large-keyart-16x9-xl.jpg.adapt.crop1x1.767w.jpg 768w, https://media.contentapi.ea.com/content/dam/masseffect/images/2020/10/mele-hero-large-keyart-16x9-xl.jpg.adapt.crop3x2.1023w.jpg 1024w, https://media.contentapi.ea.com/content/dam/masseffect/images/2020/10/mele-hero-large-keyart-16x9-xl.jpg.adapt.crop3x2.1455w.jpg 1320w, https://media.contentapi.ea.com/content/dam/masseffect/images/2020/10/mele-hero-large-keyart-16x9-xl.jpg.adapt.crop16x9.1920w.jpg 1456w"
+        />
+    
+    
+    
+    
+    
+    
+        <img
+            src="https://media.contentapi.ea.com/content/dam/masseffect/common/mass-effect-legendary-edition-hero-large-light-logo.svg"
+            
+            alt=""
+        />
+    
+    
+    
+    
+    
+    
+    
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="cta"
+    
+    
+        type="standard"
+    
+    
+        link-url="index.html"
+    
+    
+    
+        link-text="Download now"
+    
+    
+        icon="none"
+    
+    
+    
+        fill-color="brand"
+    
+    
+        text-color="light"
+    
+    
+        stroke-color="none"
+    
+    
+        target="_self"
+    
+    
+    
+    
+        intent="Download"
+    
+    
+    
+    
+        emphasis="primary"
+    
+    
+    
+    
+    
+    unresolved
+>
+
+</ea-cta>
+
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+
+
+    
+</ea-hero>
+
+</ea-section-column>
+
+    
+</ea-section>
+
+<ea-elements-loader elements="ea-section">
+</ea-elements-loader>
+<ea-section
+    unresolved
+    slot="section"
+    
+    
+        type="railed"
+    
+    
+        layout="100"
+    
+    
+    
+        background-color="none"
+    
+    
+    
+        background-overflow="visible"
+    
+    
+        spacing-top="none"
+    
+    
+        spacing-bottom="none"
+    
+    
+    
+    
+        background-image-smallest="https://img.freepik.com/premium-vector/dark-stripes-background-elegant-design-wallpapers_518299-1505.jpg"
+        background-image-small="https://img.freepik.com/premium-vector/dark-stripes-background-elegant-design-wallpapers_518299-1505.jpg"
+        background-image-medium="https://img.freepik.com/premium-vector/dark-stripes-background-elegant-design-wallpapers_518299-1505.jpg"
+        background-image-large="https://img.freepik.com/premium-vector/dark-stripes-background-elegant-design-wallpapers_518299-1505.jpg"
+        background-image-largest="https://img.freepik.com/premium-vector/dark-stripes-background-elegant-design-wallpapers_518299-1505.jpg"
+        image-tooltip=""
+    
+    
+>
+    
+        <img
+            src="https://img.freepik.com/premium-vector/dark-stripes-background-elegant-design-wallpapers_518299-1505.jpg"
+            alt=""
+            srcset="https://img.freepik.com/premium-vector/dark-stripes-background-elegant-design-wallpapers_518299-1505.jpg"
+        />
+    
+    
+
+
+<ea-section-column
+    slot="section-column"
+    
+        indent-left="1"
+    
+    
+        indent-right="1"
+    
+    
+        text-align="center"
+    
+    
+    
+        mobile-order="0"
+    
+    
+>
+    
+<ea-elements-loader elements="ea-spacer">
+</ea-elements-loader>
+<ea-spacer
+    unresolved
+    
+        smallest="4rem"
+    
+    
+        small="4rem"
+    
+    
+        medium="4rem"
+    
+    
+        large="4rem"
+    
+    
+        largest="4rem"
+    
+>
+</ea-spacer>
+
+<ea-elements-loader elements="ea-text">
+</ea-elements-loader>
+<ea-text
+    unresolved
+    slot="text"
+    
+        text-color="light"
+    
+>
+    <h3 class="d3">GET THE ADVENTURE OF THE SPACE.</h3>
+<p class="h4">Your have only spare oxygen and resource. Try to survive in mars be aware of the food.</p>
+
+    
+</ea-text>
+
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="cta"
+    
+    
+        type="standard"
+    
+    
+        link-url="/games/mass-effect/mass-effect-legendary-edition/overview"
+    
+    
+    
+        link-text="Explore Features"
+    
+    
+        icon="none"
+    
+    
+    
+        fill-color="none"
+    
+    
+        text-color="light"
+    
+    
+        stroke-color="light"
+    
+    
+        target="_self"
+    
+    
+    
+    
+        intent="navigation"
+    
+    
+    
+    
+        emphasis="primary"
+    
+    
+    
+    
+    
+    unresolved
+>
+
+</ea-cta>
+
+<ea-elements-loader elements="ea-spacer">
+</ea-elements-loader>
+<ea-spacer
+    unresolved
+    
+        smallest="2rem"
+    
+    
+        small="2rem"
+    
+    
+        medium="2rem"
+    
+    
+        large="2rem"
+    
+    
+        largest="2rem"
+    
+>
+</ea-spacer>
+
+</ea-section-column>
+
+    
+</ea-section>
+
+<ea-elements-loader elements="ea-section">
+</ea-elements-loader>
+<ea-section
+    unresolved
+    slot="section"
+    
+    
+        type="full-bleed"
+    
+    
+        layout="100"
+    
+    
+    
+        background-color="none"
+    
+    
+    
+        background-overflow="visible"
+    
+    
+        spacing-top="none"
+    
+    
+        spacing-bottom="none"
+    
+    
+    
+    
+    
+>
+    
+    
+
+
+<ea-section-column
+    slot="section-column"
+    
+        indent-left="1"
+    
+    
+        indent-right="1"
+    
+    
+        text-align="left"
+    
+    
+    
+        mobile-order="0"
+    
+    
+>
+    
+<ea-elements-loader elements="ea-grid">
+</ea-elements-loader>
+<ea-grid
+    
+
+    type="ordered"
+
+
+    tile-media-shape="rectangle"
+
+
+
+    layout="3up"
+
+
+    tile-type="vertical"
+
+
+    tile-text-align="center"
+
+
+    tile-text-color="light"
+
+
+    tile-color="none"
+
+
+
+
+    hide-eyebrow
+
+
+
+
+
+    hide-brand-stroke
+
+
+    hide-byline
+
+
+    spacing-top="none"
+
+
+    spacing-bottom="medium"
+
+
+
+
+    
+    
+    
+        tile-scrim-color="none"
+    
+    
+        tile-scrim-opacity="medium"
+    
+    tile-align="center"
+    
+    
+    
+    
+    
+    
+    
+    animate-in-order=""
+    animate-out-order=""
+    
+    unresolved
+>
+    
+    
+<ea-elements-loader elements="ea-tile">
+</ea-elements-loader>
+<ea-container
+    slot="container"
+    
+        filter-key="All"
+    
+    >
+    <ea-tile
+        unresolved
+        slot="tile"
+        style="--ea-animation-index:0"
+        
+        
+        
+        
+            media="Mars5.jpg"
+        
+        
+        
+        
+        
+            title-text="EXPLORE THE SPACE"
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+
+        
+
+        
+
+        tooltip=""
+
+        
+
+        
+    >
+        
+            <h3>Explore the Space</h3>
+        
+        
+        
+        
+        <ea-tile-copy slot="copy">
+        
+            <p>COSMIC COLONIZRES™ Legendary Edition includes a facility to child to explore and know more about the space and learns the childern to live with limited resourse.
+            </p>
+
+        
+        </ea-tile-copy>
+        
+        
+            
+        
+        
+        
+    </ea-tile>
+</ea-container>
+
+<ea-elements-loader elements="ea-tile">
+</ea-elements-loader>
+<ea-container
+    slot="container"
+    
+        filter-key="All"
+    
+    >
+    <ea-tile
+        unresolved
+        slot="tile"
+        style="--ea-animation-index:1"
+        
+        
+        
+        
+            media="Mars2.jpg"
+        
+        
+        
+        
+        
+            title-text="Limit Your Uses."
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+
+        
+
+        
+
+        tooltip=""
+
+        
+
+        
+    >
+        
+            <h3>Limit Your Uses.s</h3>
+        
+        
+        
+        
+        <ea-tile-copy slot="copy">
+        
+          Make your choice Important and always limit your uses because you will get limited resources and you have to extint your live so that you can continue your exsistence.
+        
+        </ea-tile-copy>
+        
+        
+            
+        
+        
+        
+    </ea-tile>
+</ea-container>
+
+<ea-elements-loader elements="ea-tile">
+</ea-elements-loader>
+<ea-container
+    slot="container"
+    
+        filter-key="All"
+    
+    >
+    <ea-tile
+        unresolved
+        slot="tile"
+        style="--ea-animation-index:2"
+        
+        
+        
+        
+            media="iol.png"
+        
+        
+        
+        
+        
+            title-text="Experience the Legend of Space"
+        
+        
+            link-target="_blank"
+        
+        
+        
+        
+        
+        
+        
+
+        
+
+        
+
+        
+            link-target="_blank"
+        
+
+        tooltip=""
+
+        
+
+        
+    >
+        
+            <h3>Experience the Legend of Space</h3>
+        
+        
+        
+        
+        <ea-tile-copy slot="copy">
+        
+            Make your experince better with 3d Graphics and fell the real mars and Make it clear knowledge about the mars and its spceaility.
+        
+        </ea-tile-copy>
+        
+        
+            
+        
+        
+        
+    </ea-tile>
+</ea-container>
+
+    
+
+
+</ea-grid>
+
+</ea-section-column>
+
+    
+</ea-section>
+
+<ea-elements-loader elements="ea-section">
+</ea-elements-loader>
+<ea-section
+    unresolved
+    slot="section"
+    
+    
+        type="railed"
+    
+    
+        layout="100"
+    
+    
+    
+        background-color="none"
+    
+    
+    
+        background-overflow="hidden"
+    
+    
+        spacing-top="none"
+    
+    
+        spacing-bottom="none"
+    
+    
+    
+    
+    
+>
+    
+    
+
+
+<ea-section-column
+    slot="section-column"
+    
+        indent-left="1"
+    
+    
+        indent-right="1"
+    
+    
+        text-align="center"
+    
+    
+    
+        mobile-order="0"
+    
+    
+>
+    
+
+    <div>
+        <a id="remaster-comparison"></a>
+    </div>
+
+
+<ea-elements-loader elements="ea-spacer">
+</ea-elements-loader>
+<ea-spacer
+    unresolved
+    
+        smallest="2rem"
+    
+    
+        small="2rem"
+    
+    
+        medium="2rem"
+    
+    
+        large="2rem"
+    
+    
+        largest="2rem"
+    
+>
+</ea-spacer>
+
+<ea-elements-loader elements="ea-text">
+</ea-elements-loader>
+<ea-text
+    unresolved
+    slot="text"
+    
+        text-color="light"
+    
+>
+    <h3 class="d3">REMASTERED AND OPTIMIZED FOR 4K ULTRA HD</h3>
+<p class="h6">SEE THE EXAMPLE OF THE GAME TO HAVE SOME EXPERINCE BEFORE DOWNLOAD</p>
+
+    
+</ea-text>
+
+</ea-section-column>
+
+    
+</ea-section>
+
+
+    
+<ea-elements-loader elements="ea-section">
+</ea-elements-loader>
+<ea-section
+    unresolved
+    slot="section"
+    
+    
+        type="full-bleed"
+    
+    
+        layout="100"
+    
+    
+    
+        background-color="none"
+    
+    
+    
+        background-overflow="visible"
+    
+    
+        spacing-top="none"
+    
+    
+        spacing-bottom="none"
+    
+    
+    
+    
+    
+>
+    
+    
+
+
+<ea-section-column
+    slot="section-column"
+    
+        indent-left="1"
+    
+    
+        indent-right="1"
+    
+    
+        text-align="left"
+    
+    
+    
+        mobile-order="0"
+    
+    
+>
+    
+<ea-elements-loader elements="ea-tabs">
+</ea-elements-loader>
+<dom-bind>
+    <template>
+        <ea-tabs
+            unresolved
+            
+                theme="custom"
+            
+            
+            
+            indicate
+            autoselect
+            selected="{{ selected }}"
+        >
+            
+
+    <ea-elements-loader elements="ea-tab">
+    </ea-elements-loader>
+
+
+
+
+    <ea-elements-loader elements="ea-tab">
+    </ea-elements-loader>
+    <ea-tab
+        unresolved
+        
+            url="#image1"
+        
+        
+        
+            theme="custom"
+        
+    >
+        
+            Image 1
+        
+    </ea-tab>
+
+
+
+    <ea-elements-loader elements="ea-tab">
+    </ea-elements-loader>
+ 
+
+
+
+    <ea-elements-loader elements="ea-tab">
+    </ea-elements-loader>
+    <ea-tab
+        unresolved
+        
+            url="#image2"
+        
+        
+        
+            theme="custom"
+        
+    >
+        
+            Image 2
+        
+    </ea-tab>
+
+
+
+    <ea-elements-loader elements="ea-tab">
+    </ea-elements-loader>
+    <ea-tab
+        unresolved
+        
+            url="#image3"
+        
+        
+        
+            theme="custom"
+        
+    >
+        
+            Image 3
+        
+    </ea-tab>
+
+
+        </ea-tabs>
+        <iron-pages selected="{{ selected }}">
+            
+                
+                    
+                        <div>
+                            
+<ea-elements-loader elements="ea-section">
+</ea-elements-loader>
+<ea-section
+    unresolved
+    slot="section"
+    
+    
+        type="full-bleed"
+    
+    
+        layout="100"
+    
+    
+    
+        background-color="none"
+    
+    
+    
+        background-overflow="visible"
+    
+    
+        spacing-top="none"
+    
+    
+        spacing-bottom="none"
+    
+    
+    
+    
+    
+>
+    
+    
+
+
+<ea-section-column
+    slot="section-column"
+    
+    
+    
+        text-align="left"
+    
+    
+    
+        mobile-order="0"
+    
+    
+>
+    
+<ea-elements-loader elements="ea-media-slider">
+</ea-elements-loader>
+<ea-media-slider
+    unresolved
+    left-media="{&quot;type&quot;:&quot;image&quot;,&quot;url&quot;:&quot;ghg.jpg&quot;,&quot;poster&quot;:null}"
+    right-media="{&quot;type&quot;:&quot;image&quot;,&quot;url&quot;:&quot;jfu.jpg&quot;,&quot;imageAlt&quot;:&quot;&quot;}"
+    arrow-color="#000"
+    splitter-color="#fff"
+    active-splitter-color="#fff"
+>
+</ea-media-slider>
+
+</ea-section-column>
+
+    
+</ea-section>
+
+                        </div>
+                    
+                
+            
+                
+                    
+                        <div>
+                            
+<ea-elements-loader elements="ea-media-slider">
+</ea-elements-loader>
+<ea-media-slider
+    unresolved
+    left-media="{&quot;type&quot;:&quot;image&quot;,&quot;url&quot;:&quot;ghg.jpg&quot;,&quot;imageAlt&quot;:&quot;&quot;}"
+    right-media="{&quot;type&quot;:&quot;image&quot;,&quot;url&quot;:&quot;jhk.jpg&quot;,&quot;imageAlt&quot;:&quot;&quot;}"
+    arrow-color="#000"
+    splitter-color="#fff"
+    active-splitter-color="#fff"
+>
+</ea-media-slider>
+
+                        </div>
+                    
+                
+            
+                
+                    
+                        <div>
+                            
+<ea-elements-loader elements="ea-media-slider">
+</ea-elements-loader>
+<ea-media-slider
+    unresolved
+    left-media="{&quot;type&quot;:&quot;image&quot;,&quot;url&quot;:&quot;moi.jpg&quot;,&quot;imageAlt&quot;:&quot;&quot;}"
+    right-media="{&quot;type&quot;:&quot;image&quot;,&quot;url&quot;:&quot;jfj.png&quot;,&quot;imageAlt&quot;:&quot;&quot;}"
+    arrow-color="#000"
+    splitter-color="#fff"
+    active-splitter-color="#fff"
+>
+</ea-media-slider>
+
+                        </div>
+                    
+                
+            
+                
+                    
+                        <div>
+                            
+<ea-elements-loader elements="ea-media-slider">
+</ea-elements-loader>
+
+
+                        </div>
+                    
+                
+            
+                
+                    
+                        <div>
+                            
+<ea-elements-loader elements="ea-media-slider">
+</ea-elements-loader>
+
+
+                        </div>
+                    
+                
+            
+        </iron-pages>
+    </template>
+</dom-bind>
+
+<ea-elements-loader elements="ea-spacer">
+</ea-elements-loader>
+<ea-spacer
+    unresolved
+    
+        smallest="4rem"
+    
+    
+        small="4rem"
+    
+    
+        medium="5rem"
+    
+    
+        large="5rem"
+    
+    
+        largest="5rem"
+    
+>
+</ea-spacer>
+
+</ea-section-column>
+
+    
+</ea-section>
+
+
+
+
+    
+<ea-elements-loader elements="ea-section">
+</ea-elements-loader>
+<ea-section
+    unresolved
+    slot="section"
+    
+    
+        type="full-bleed"
+    
+    
+        layout="100"
+    
+    
+    
+        background-color="none"
+    
+    
+    
+        background-overflow="visible"
+    
+    
+        spacing-top="small"
+    
+    
+        spacing-bottom="medium"
+    
+    
+    
+    
+    
+>
+    
+    
+
+
+<ea-section-column
+    slot="section-column"
+    
+        indent-left=""
+    
+    
+        indent-right=""
+    
+    
+        text-align="left"
+    
+    
+    
+        mobile-order="0"
+    
+    
+>
+    
+<ea-elements-loader elements="ea-hero">
+</ea-elements-loader>
+<ea-hero
+    
+        layout="medium"
+    
+    
+        text-position="right"
+    
+    
+        text-align="left"
+    
+    
+        text-color="light"
+    
+    
+        stacked
+    
+    
+    
+    
+    
+    
+        background-color="none"
+    
+    
+    
+    
+        title-text="JOURNEY TO THE STARS"
+    
+    
+    
+        copy-text="Make The Journey To the Mars And Get The Knowledge Of The Space By A game As It is A Educational Game.This Educational Game Is Made for Child Who Love games As This Game Will Give Them Knowledge."
+    
+    
+        image-smallest="https://media.contentapi.ea.com/content/dam/eacom/mass-effect-legendary-edition/images/2021/04/mele-hero-medium-my-shepard-creator-7x2-xl.jpg.adapt.crop16x9.320w.jpg"
+        image-small="https://media.contentapi.ea.com/content/dam/eacom/mass-effect-legendary-edition/images/2021/04/mele-hero-medium-my-shepard-creator-7x2-xl.jpg.adapt.crop16x9.767w.jpg"
+        image-medium="https://media.contentapi.ea.com/content/dam/eacom/mass-effect-legendary-edition/images/2021/04/mele-hero-medium-my-shepard-creator-7x2-xl.jpg.adapt.crop2x1.1023w.jpg"
+        image-large="https://media.contentapi.ea.com/content/dam/eacom/mass-effect-legendary-edition/images/2021/04/mele-hero-medium-my-shepard-creator-7x2-xl.jpg.adapt.crop5x2.1455w.jpg"
+        image-largest="https://media.contentapi.ea.com/content/dam/eacom/mass-effect-legendary-edition/images/2021/04/mele-hero-medium-my-shepard-creator-7x2-xl.jpg.adapt.crop7x2.1920w.jpg"
+        image-tooltip=""
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        spacing-bottom="medium"
+    
+    
+        spacing-top="none"
+    
+    
+        scrim-color="none"
+    
+    
+        scrim-opacity="medium"
+    
+    
+    unresolved
+    
+        custom-styles="{}"
+    
+    
+    
+    
+>
+    
+        <h1>JOURNEY TO THE STARS</h1>
+    
+    
+    
+        <p>Make the Mass Effect Legendary Edition cover art your own. Feature your favorite characters and romances, show your true Paragon or Renegade colors, and more.</p>
+    
+    
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<ea-elements-loader elements="ea-html5-video">
+</ea-elements-loader>
+<ea-html5-video
+    slot="html5-video"
+    
+        webm-src-smallest="rt.mp4"
+    
+
+    
+        mp4-src-smallest="rt.mp4"
+    
+
+    
+        webm-src-small="rt.mp4"
+    
+
+    
+        mp4-src-small="rt.mp4"
+    
+
+    
+        webm-src-medium="rt.mp4"
+    
+
+    
+        mp4-src-medium="rt.mp4"
+    
+
+    
+        webm-src="rt.mp4"
+    
+
+    
+        mp4-src="rt.mp4"
+    
+
+    
+        webm-src-largest="rt.mp4"
+    
+
+    
+        mp4-src-largest="rt.mp4"
+    
+
+    
+        autoplay=""
+    
+
+    
+
+    
+
+    
+        loop=""
+    
+
+    
+        muted=""
+    
+
+    
+
+    
+    unresolved
+>
+    
+</ea-html5-video>
+
+    
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="cta"
+    
+    
+        type="standard"
+    
+    
+        link-url="/games/mass-effect/mass-effect-legendary-edition/my-shepard-art-creator"
+    
+    
+    
+        link-text="Download Now."
+    
+    
+        icon="none"
+    
+    
+    
+        fill-color="none"
+    
+    
+        text-color="light"
+    
+    
+        stroke-color="light"
+    
+    
+        target="_self"
+    
+    
+    
+    
+        intent="navigation"
+    
+    
+    
+    
+        emphasis="primary"
+    
+    
+    
+    
+    
+    unresolved
+>
+
+</ea-cta>
+
+    
+</ea-hero>
+
+</ea-section-column>
+
+    
+</ea-section>
+
+
+
+<ea-elements-loader elements="ea-section">
+</ea-elements-loader>
+<ea-section
+    unresolved
+    slot="section"
+    
+    
+        type="full-bleed"
+    
+    
+        layout="100"
+    
+    
+    
+        background-color="none"
+    
+    
+    
+        background-overflow="hidden"
+    
+    
+        spacing-top="none"
+    
+    
+        spacing-bottom="none"
+    
+    
+    
+    
+    
+>
+    
+    
+
+
+<ea-section-column
+    slot="section-column"
+    
+    
+    
+        text-align="left"
+    
+    
+    
+        mobile-order="0"
+    
+    
+>
+    
+
+    <div>
+        <style>
+.full-bleed-padding {
+padding: 0px;
+} 
+@media only screen and (max-width: 767px) {
+.full-bleed-padding {
+padding: 0px 20px;
+}
+}
+</style>
+    </div>
+
+
+<ea-elements-loader elements="ea-hero">
+</ea-elements-loader>
+<ea-hero
+    
+        layout="medium"
+    
+    
+        text-position="left"
+    
+    
+        text-align="left"
+    
+    
+        text-color="light"
+    
+    
+        stacked
+    
+    
+    
+    
+    
+    
+        background-color="none"
+    
+    
+    
+    
+        title-text="THE KNOWLEDGE OF MARS"
+    
+    
+        subtitle-text="Now learn About The Mars And Live In A Virtual Planets Which Will Help In Your Knowledge"
+    
+    
+    
+        image-smallest="lo.png"
+        image-small="lo.png"
+        image-medium="lo.png"
+        image-large="lo.png"
+        image-largest="lo.png"
+        image-tooltip=""
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        spacing-bottom="none"
+    
+    
+        spacing-top="none"
+    
+    
+        scrim-color="none"
+    
+    
+        scrim-opacity="medium"
+    
+    
+    unresolved
+    
+        custom-styles="{&quot;xl&quot;:{&quot;paddingLeft&quot;:&quot;5%&quot;,&quot;paddingRight&quot;:&quot;60%&quot;},&quot;l&quot;:{&quot;paddingLeft&quot;:&quot;5%&quot;,&quot;paddingRight&quot;:&quot;60%&quot;},&quot;m&quot;:{&quot;paddingLeft&quot;:&quot;5%&quot;,&quot;paddingRight&quot;:&quot;60%&quot;}}"
+    
+    
+    
+    
+>
+    
+        <h1>THE MASS EFFECT UNIVERSE</h1>
+    
+    
+        <h2>New to the Mass Effect trilogy? Learn about the history of the series, the incredible characters you&#x27;ll meet, and more.</h2>
+    
+    
+    
+    
+        <img
+            src="lo.png"
+            alt=""
+            srcset="https://media.contentapi.ea.com/content/dam/eacom/mass-effect-legendary-edition/images/2021/01/mele-hero-medium-me-universe-7x2-xl.jpg.adapt.crop16x9.320w.jpg 320w, https://media.contentapi.ea.com/content/dam/eacom/mass-effect-legendary-edition/images/2021/01/mele-hero-medium-me-universe-7x2-xl.jpg.adapt.crop16x9.767w.jpg 768w, https://media.contentapi.ea.com/content/dam/eacom/mass-effect-legendary-edition/images/2021/01/mele-hero-medium-me-universe-7x2-xl.jpg.adapt.crop2x1.1023w.jpg 1024w, https://media.contentapi.ea.com/content/dam/eacom/mass-effect-legendary-edition/images/2021/01/mele-hero-medium-me-universe-7x2-xl.jpg.adapt.crop5x2.1455w.jpg 1320w, https://media.contentapi.ea.com/content/dam/eacom/mass-effect-legendary-edition/images/2021/01/mele-hero-medium-me-universe-7x2-xl.jpg.adapt.crop7x2.1920w.jpg 1456w"
+        />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="cta"
+    
+    
+        type="standard"
+    
+    
+        link-url="/games/mass-effect/mass-effect-legendary-edition/about"
+    
+    
+    
+        link-text="LEARN ABOUT THE PLANETS"
+    
+    
+        icon="none"
+    
+    
+    
+        fill-color="none"
+    
+    
+        text-color="light"
+    
+    
+        stroke-color="light"
+    
+    
+        target="_self"
+    
+    
+    
+    
+        intent="news"
+    
+    
+    
+    
+        emphasis="primary"
+    
+    
+    
+    
+    
+    unresolved
+>
+
+</ea-cta>
+
+    
+</ea-hero>
+
+</ea-section-column>
+
+    
+</ea-section>
+
+<ea-elements-loader elements="ea-section">
+</ea-elements-loader>
+<ea-section
+    unresolved
+    slot="section"
+    
+    
+        type="full-bleed"
+    
+    
+        layout="50:50"
+    
+    
+    
+        background-color="none"
+    
+    
+    
+        background-overflow="visible"
+    
+    
+        spacing-top="medium"
+    
+    
+        spacing-bottom="medium"
+    
+    
+    
+    
+    
+>
+    
+    
+
+
+<ea-section-column
+    slot="section-column"
+    
+        indent-left="1"
+    
+    
+    
+        text-align="center"
+    
+    
+    
+        mobile-order="0"
+    
+    
+>
+    
+<ea-elements-loader elements="ea-media">
+</ea-elements-loader>
+<ea-media
+    slot="media"
+    
+    
+    
+        text-color="dark"
+    
+    
+    
+    
+    
+        spacing-top="small"
+    
+    
+        spacing-bottom="small"
+    
+    unresolved
+>
+    
+
+   
+
+
+
+
+
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+
+
+<ea-elements-loader elements="ea-spacer">
+</ea-elements-loader>
+<ea-spacer
+    unresolved
+    
+        smallest="2rem"
+    
+    
+        small="2rem"
+    
+    
+        medium="0px"
+    
+    
+        large="0px"
+    
+    
+        largest="0px"
+    
+>
+</ea-spacer>
+
+</ea-section-column>
+
+    
+</ea-section>
+
+
+    
+<ea-elements-loader elements="ea-section">
+</ea-elements-loader>
+<ea-section
+    unresolved
+    slot="section"
+    
+    
+        type="full-bleed"
+    
+    
+        layout="100"
+    
+    
+    
+        background-color="none"
+    
+    
+    
+        background-overflow="hidden"
+    
+    
+        spacing-top="none"
+    
+    
+        spacing-bottom="none"
+    
+    
+    
+    
+    
+>
+    
+    
+
+
+<ea-section-column
+    slot="section-column"
+    
+    
+    
+        text-align="right"
+    
+    
+    
+        mobile-order="0"
+    
+    
+>
+    
+
+    <div>
+        <style>
+.full-bleed-padding {
+padding: 0px;
+} 
+@media only screen and (max-width: 767px) {
+.full-bleed-padding {
+padding: 0px 20px;
+}
+}
+</style>
+    </div>
+
+
+<ea-elements-loader elements="ea-hero">
+</ea-elements-loader>
+
+
+</ea-section-column>
+
+    
+</ea-section>
+
+
+
+
+    
+<ea-elements-loader elements="ea-section">
+</ea-elements-loader>
+<ea-section
+    unresolved
+    slot="section"
+    
+    
+        type="railed"
+    
+    
+        layout="100"
+    
+    
+    
+        background-color="none"
+    
+    
+    
+        background-overflow="hidden"
+    
+    
+        spacing-top="none"
+    
+    
+        spacing-bottom="medium"
+    
+    
+    
+    
+    
+>
+    
+    
+
+
+<ea-section-column
+    slot="section-column"
+    
+    
+    
+        text-align="center"
+    
+    
+    
+        mobile-order="0"
+    
+    
+>
+    
+<ea-elements-loader elements="ea-spacer">
+</ea-elements-loader>
+<ea-spacer
+    unresolved
+    
+    
+    
+    
+    
+>
+</ea-spacer>
+
+<ea-elements-loader elements="ea-subheading">
+</ea-elements-loader>
+<ea-subheading
+    unresolved
+    
+        type="ordered"
+    
+    
+        layout="small"
+    
+    
+        text-align="center"
+    
+    
+        text-color="light"
+    
+    
+    
+        title-text="EXPLORE THE COSMIC COLLONIIZERS MORE"
+    
+    
+    
+        spacing-top="small"
+    
+    
+        spacing-bottom="small"
+    
+>
+    
+    
+        <h3>EXPLORE THE COSMIC COLLONIIZERS MORE</h3>
+    
+    
+</ea-subheading>
+
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="cta"
+    
+    
+        type="standard"
+    
+    
+        link-url="index.html"
+    
+    
+    
+        link-text="Home"
+    
+    
+        icon="none"
+    
+    
+    
+        fill-color="brand"
+    
+    
+        text-color="light"
+    
+    
+        stroke-color="none"
+    
+    
+        target="_self"
+    
+    
+    
+    
+        intent="navigation"
+    
+    
+    
+    
+        emphasis="primary"
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+            href="index.html"
+        
+        
+    >
+        
+          Home
+    </a>
+</ea-cta>
+
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="cta"
+    
+    
+        type="standard"
+    
+    
+        link-url="gameoverview.html"
+    
+    
+    
+        link-text="Game Overview"
+    
+    
+        icon="none"
+    
+    
+    
+        fill-color="brand"
+    
+    
+        text-color="light"
+    
+    
+        stroke-color="none"
+    
+    
+        target="_self"
+    
+    
+    
+    
+        intent="navigation"
+    
+    
+    
+    
+        emphasis="primary"
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+            href="gameoverview.html"
+        
+        
+    >
+        
+            Game Overview
+        
+    </a>
+</ea-cta>
+
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="cta"
+    
+    
+        type="standard"
+    
+    
+        link-url="story.html"
+    
+    
+    
+        link-text="Story"
+    
+    
+        icon="none"
+    
+    
+    
+        fill-color="brand"
+    
+    
+        text-color="light"
+    
+    
+        stroke-color="none"
+    
+    
+        target="_self"
+    
+    
+    
+    
+        intent="navigation"
+    
+    
+    
+    
+        emphasis="primary"
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+            href="story.html"
+        
+        
+    >
+        
+           STORY
+    </a>
+</ea-cta>
+
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+
+
+
+<ea-section
+    unresolved
+    slot="section"
+    
+    
+        type="railed"
+    
+    
+        layout="100"
+    
+    
+    
+        background-color="none"
+    
+    
+    
+        background-overflow="hidden"
+    
+    
+        spacing-top="none"
+    
+    
+        spacing-bottom="none"
+    
+    
+    
+    
+        background-image-smallest="https://t3.ftcdn.net/jpg/03/17/97/50/360_F_317975026_9U187V7nWx7OezSzHJuxvqWvM9KJ9V29.jpg"
+        background-image-small="https://t3.ftcdn.net/jpg/03/17/97/50/360_F_317975026_9U187V7nWx7OezSzHJuxvqWvM9KJ9V29.jpg"
+        background-image-medium="https://t3.ftcdn.net/jpg/03/17/97/50/360_F_317975026_9U187V7nWx7OezSzHJuxvqWvM9KJ9V29.jpg"
+        background-image-large="https://t3.ftcdn.net/jpg/03/17/97/50/360_F_317975026_9U187V7nWx7OezSzHJuxvqWvM9KJ9V29.jpg"
+        background-image-largest="https://t3.ftcdn.net/jpg/03/17/97/50/360_F_317975026_9U187V7nWx7OezSzHJuxvqWvM9KJ9V29.jpg"
+        image-tooltip=""
+    
+    
+>
+    
+        <img
+            src="https://t3.ftcdn.net/jpg/03/17/97/50/360_F_317975026_9U187V7nWx7OezSzHJuxvqWvM9KJ9V29.jpg"
+            alt=""
+            srcset="https://t3.ftcdn.net/jpg/03/17/97/50/360_F_317975026_9U187V7nWx7OezSzHJuxvqWvM9KJ9V29.jpg"
+        />
+    
+    
+
+
+<ea-section-column
+    slot="section-column"
+    
+    
+    
+        text-align="center"
+    
+    
+    
+        mobile-order="0"
+    
+    
+>
+    
+<ea-elements-loader elements="ea-text">
+</ea-elements-loader>
+<ea-text
+    unresolved
+    slot="text"
+    
+        text-color="light"
+    
+>
+    <h3 class="eapl-subheading__title d4 d4-light">GET A CHANCE TO EXPLORE THE SPACE.</h3>
+
+    
+</ea-text>
+
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="cta"
+    
+    
+        type="standard"
+    
+    
+        link-url="/games/mass-effect/mass-effect-legendary-edition/buy"
+    
+    
+        link-title="Download Now"
+    
+    
+        link-text="Download Now"
+    
+    
+        icon="none"
+    
+    
+    
+        fill-color="none"
+    
+    
+        text-color="light"
+    
+    
+        stroke-color="light"
+    
+    
+        target="_self"
+    
+    
+    
+    
+        intent="buy"
+    
+    
+    
+    
+        emphasis="primary"
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+            href="/games/mass-effect/mass-effect-legendary-edition/buy"
+        
+        
+            title="Download Now"
+        
+    >
+        
+            Download Now
+        
+    </a>
+</ea-cta>
+
+<ea-elements-loader elements="ea-spacer">
+</ea-elements-loader>
+<ea-spacer
+    unresolved
+    
+        smallest="2rem"
+    
+    
+        small="2rem"
+    
+    
+        medium="1rem"
+    
+    
+        large="1rem"
+    
+    
+        largest="1rem"
+    
+>
+</ea-spacer>
+
+</ea-section-column>
+
+    
+</ea-section>
+
+
+
+
+    
+<ea-elements-loader elements="ea-section">
+</ea-elements-loader>
+<ea-section
+    unresolved
+    slot="section"
+    
+    
+        type="full-bleed"
+    
+    
+        layout="100"
+    
+    
+    
+        background-color="none"
+    
+    
+    
+        background-overflow="hidden"
+    
+    
+        spacing-top="none"
+    
+    
+        spacing-bottom="none"
+    
+    
+    
+    
+    
+>
+    
+    
+
+
+<ea-section-column
+    slot="section-column"
+    
+        indent-left=""
+    
+    
+        indent-right=""
+    
+    
+        text-align="left"
+    
+    
+    
+        mobile-order="0"
+    
+    
+>
+
+
+
+<ea-elements-loader elements="ea-modal">
+</ea-elements-loader>
+<ea-modal
+    modal
+    unresolved
+    
+        id="trailer"
+    
+    
+        theme="dark"
+    
+    
+        type="railed"
+    
+>
+    
+<ea-elements-loader elements="ea-youtube">
+</ea-elements-loader>
+<ea-youtube
+    unresolved
+    slot="youtube"
+    video-id="q0lVjqxF0C0"
+    
+    
+        playlist=""
+    
+    
+    
+        default-age-gate=""
+    
+    theme="light"
+    icon-theme="light"
+    autoplay="0"
+    controls="1"
+    rel="0"
+    annotations="3"
+    hide-info="0"
+    age-gate-alignment="center-left"
+    age-gate-message="This video is age-restricted and only available on Youtube."
+    more-link-text="Learn More"
+    more-link-url="https://support.google.com/youtube/answer/2802167?hl=en"
+    watch-link-text="Watch on Youtube"
+    
+        cover-image-smallest="https://media.contentapi.ea.com/content/dam/eacom/mass-effect-legendary-edition/images/2021/05/mele-1920x1080p.jpg.adapt.crop16x9.320w.jpg"
+        cover-image-small="https://media.contentapi.ea.com/content/dam/eacom/mass-effect-legendary-edition/images/2021/05/mele-1920x1080p.jpg.adapt.crop16x9.767w.jpg"
+        cover-image-medium="https://media.contentapi.ea.com/content/dam/eacom/mass-effect-legendary-edition/images/2021/05/mele-1920x1080p.jpg.adapt.crop16x9.1023w.jpg"
+        cover-image-large="https://media.contentapi.ea.com/content/dam/eacom/mass-effect-legendary-edition/images/2021/05/mele-1920x1080p.jpg.adapt.crop16x9.1455w.jpg"
+        cover-image-largest="https://media.contentapi.ea.com/content/dam/eacom/mass-effect-legendary-edition/images/2021/05/mele-1920x1080p.jpg.adapt.crop16x9.1920w.jpg"
+        cover-image-tooltip=""
+        button-color="dark"
+    
+>
+    
+    
+        
+            
+                
+        <div itemscope itemtype="http://schema.org/VideoObject">
+            <link itemprop="url" href="https://www.youtube.com/watch?v=q0lVjqxF0C0">
+            
+                <link itemprop="thumbnailUrl" href="https://media.contentapi.ea.com/content/dam/eacom/mass-effect-legendary-edition/images/2021/05/mele-1920x1080p.jpg.adapt.crop16x9.1920w.jpg">
+            
+            <iframe src="https://www.youtube.com/embed/q0lVjqxF0C0"></iframe>
+        </div>
+    
+            
+        
+    
+</ea-youtube>
+
+</ea-modal>
+<br><br><br>
+
+    
+    <div style="display: none;"></div>
+</main>
+
+
+
+            
+        
+    
+
+
+
+
+    
+        
+            
+                <script src="//pl.ea.com/release/4.63.0/elements/browser-support.min.js"></script>
+<script>
+    eaBrowserSupport.requiredFeatures = 'picture';
+    eaBrowserSupport.requiredHeading = 'Sorry, this browser is not supported';
+    eaBrowserSupport.requiredText = 'Please download a supported browser to view this webpage.';
+    eaBrowserSupport.recommendedFeatures = 'cssgrid';
+    eaBrowserSupport.recommendedText = 'This browser is not recommended and the webpage may not display properly.';
+    eaBrowserSupport.ctas = [{"text":"Download Chrome","url":"https://www.google.com/chrome/"},{"text":"Download Firefox","url":"https://www.mozilla.org/firefox/new/"},{"text":"Download Edge","url":"https://www.microsoft.com/edge/"}];
+    eaBrowserSupport.dismissText = 'Dismiss';
+    eaBrowserSupport.svgLogo = '';
+    eaBrowserSupport.init();
+</script>
+
+            
+        
+    
+
+
+
+
+    <ea-type-kit kit-url="//use.typekit.net/txn1klh.js"></ea-type-kit>
+
+
+    <noscript><img src="https://www.ea.com/akam/13/pixel_5d737060?a=dD0yOTM5YjI4OTY0ZDhmNWExMDE0YTVhNjhjYmY0OWNjMWNjMDU0NzVhJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
+</html>
+
